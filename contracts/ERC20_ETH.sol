@@ -15,6 +15,6 @@ contract EthERC20 is ERC20 {
         string memory symbol,
         uint256 total_supply
     ) ERC20(name, symbol) {
-        _mint(msg.sender, total_supply);
+        _mint(msg.sender, total_supply * 1e18);
     }
 }
